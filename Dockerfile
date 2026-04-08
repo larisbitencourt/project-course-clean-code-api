@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+RUN ./node_modules/.bin/tsc --skipLibCheck
 
 RUN npm prune --production
 
